@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Store</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    background: linear-gradient(to right, #677579, #515960);
+  }
+
+  header {
+    background: linear-gradient(to right, #51596f, #ff4b2b);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+  }
+
+  .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #f8f8f8;
+    transition: transform 0.3s ease;
+  }
+
+  .product-item:hover img {
+    transform: scale(1.05);
+  }
+
+  .product-details {
+    padding: 20px;
+  }
+
+  .product-item h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .product-item p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #777;
+  }
+
+  .product-item button {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .product-item button:hover {
+    background-color: #ff6347;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Clothing Store</h1>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="t5.jpg" alt="Clothing 1">
+        <div class="product-details">
+          <h2>Shirts</h2>
+          <!-- <p>Description of Product 1</p> -->
+          <p>$49.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="t6.jpg" alt="Clothing 2">
+        <div class="product-details">
+          <h2>Denim Shirts</h2>
+          <!-- <p>Description of Product 2</p> -->
+          <p>$39.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="t2.jpg" alt="Clothing 1">
+        <div class="product-details">
+          <h2>Hoody</h2>
+          <!-- <p>Description of Product 1</p> -->
+          <p>$49.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="t1.jpg" alt="Clothing 2">
+        <div class="product-details">
+          <h2>Hoody</h2>
+          <!-- <p>Description of Product 2</p> -->
+          <p>$39.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
